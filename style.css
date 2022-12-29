@@ -1,0 +1,124 @@
+body {
+    background-color: #222;
+}
+
+.logo {
+   color: white;
+   font-family: Roboto, Arial;
+   font-size: 50px;
+   text-align: center;
+}
+
+.by {
+    font-family: Roboto, Arial;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.container {
+    padding: 0 15px;
+    text-align: center;
+    font-size: 15px
+}
+
+textarea {
+    width: 70%;
+    padding: 15px 20px;
+    font-family: Arial;
+    font-size: 1rem;
+    letter-spacing: .1px;
+    color: white !important;
+    line-height: 30px;
+    white-space: pre;
+    word-wrap: normal;
+    overflow-x: scroll;
+    min-height: 315px;
+    margin-bottom: 20px;
+    overflow: auto;
+    resize: vertical;
+    background: #2b2b2b;
+    border: 1px solid #2b2b2b;
+}
+
+textarea:focus {
+    border: 1px solid #2b2b2b;
+    outline: none;
+}
+
+.form {
+    margin: 30px 0 20px 0
+}
+
+button {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    position: relative;
+    left: -20px;
+    color: white;
+    border: 1px solid rgba(255,255,255,.4);
+    background: none;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+button:before,
+button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+}
+button:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+button:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+}
+button:hover:before,
+button:hover:after{
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+button:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+button:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+button:hover {background: rgba(255,255,255,.2);}
+
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+    cursor: auto !important;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+    cursor: auto;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+    cursor: auto;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+    cursor: auto;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+    cursor: auto;
+}
